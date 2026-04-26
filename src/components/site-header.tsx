@@ -119,7 +119,7 @@ export function SiteHeader() {
             : "bg-transparent"
         )}
       >
-        <div className="flex min-h-12 w-full max-w-6xl items-center justify-between gap-3 px-4 sm:min-h-14 sm:gap-4 sm:px-6 md:min-h-[3.5rem] md:px-8 lg:px-10">
+        <div className="flex min-h-12 w-full max-w-6xl items-center justify-between gap-3 px-4 sm:min-h-14 sm:gap-4 sm:px-6 md:min-h-[3.5rem] md:px-8 lg:px-8">
           <Link
             href="/"
             className="group flex min-w-0 max-w-[min(100%,20rem)] flex-shrink items-center leading-none sm:max-w-2xl"

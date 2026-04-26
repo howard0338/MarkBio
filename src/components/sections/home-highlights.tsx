@@ -7,7 +7,7 @@ const coreAdvantages = [
     title: "本土原生來源",
     subtitle: "首株本土原生菌",
     description:
-      "TCell-1 來自健康成年國人腸道黏膜，完整契合在地體質與飲食環境。",
+      "TCell-1 來自健康成年台灣人腸道黏膜，完整契合在地體質與飲食環境。",
     icon: Beaker,
   },
   {
@@ -44,7 +44,7 @@ export function HomeHighlightsSection() {
       <div className="mx-auto max-w-6xl space-y-12 px-4 py-8 sm:px-6 sm:py-12 md:px-8">
         <section className="space-y-6">
           <h2 className="text-balance text-2xl font-semibold tracking-[-0.02em] text-brand-navy sm:text-3xl">
-            核心優勢：國人專屬的原生防護
+            核心優勢：台灣人專屬的原生防護
           </h2>
           <div className="grid gap-4 md:grid-cols-3">
             {coreAdvantages.map((item) => {

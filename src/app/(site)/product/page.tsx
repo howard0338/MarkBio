@@ -16,7 +16,7 @@ export default function ProductPage() {
       />
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12 md:px-8">
         <section className="grid gap-8 lg:grid-cols-[minmax(16rem,0.9fr)_minmax(0,1.1fr)] lg:items-start">
-          <div className="overflow-hidden rounded-2xl">
+          <div className="mx-auto w-full max-w-xs overflow-hidden rounded-2xl sm:max-w-sm lg:max-w-[22rem]">
             <div className="relative aspect-[4/5] w-full">
               <Image
                 src="/images/product.png"

@@ -121,7 +121,7 @@ export function HeroSection() {
             variants={afterTitleStagger(0)}
             className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-brand-navy/70 sm:text-lg"
           >
-            由健康成年國人腸道黏膜分離出的本土型原生益菌，具備四大優勢：耐酸抗膽鹽、長效吸附、可抑制 14
+            由健康成年台灣人腸道黏膜分離出的本土型原生益菌，具備四大優勢：耐酸抗膽鹽、長效吸附、可抑制 14
             種腸道有害菌，並有四大學術機構與百位以上臨床個案支持，為日常健康提供更扎實的防護基礎。
           </motion.p>
 
@@ -176,7 +176,7 @@ export function HeroSection() {
         </div>
 
         <motion.div
-          className="relative mx-auto mt-6 w-full max-w-md justify-self-end lg:mx-0 lg:ml-auto lg:mt-10 lg:max-w-lg lg:pl-2 xl:max-w-[26rem]"
+          className="relative mx-auto mt-6 w-full max-w-sm justify-self-end lg:mx-0 lg:ml-auto lg:mt-10 lg:max-w-md lg:pl-2 xl:max-w-[22rem]"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, delay: 0.35, ease: easeOut }}

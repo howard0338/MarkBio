@@ -26,7 +26,7 @@ export const scienceArticleBodies: Record<string, ScienceArticleBody> = {
       {
         title: "本土原生菌種的誕生",
         paragraphs: [
-          "TCell-1 是國內第一株以內視鏡深入健康國人腸道黏膜組織中，篩選、分離出來的本土型乳酸桿菌。因取自國人體內正常棲息生態，在適應上更貼合台灣人體質與飲食生活型態。",
+          "TCell-1 是國內第一株以內視鏡深入健康台灣人腸道黏膜組織中，篩選、分離出來的本土型乳酸桿菌。因取自台灣人體內正常棲息生態，在適應上更貼合台灣人體質與飲食生活型態。",
         ],
       },
       {
@@ -150,7 +150,7 @@ export const scienceArticleBodies: Record<string, ScienceArticleBody> = {
           rows: [
             [
               "菌株來源",
-              "自國人腸道黏膜分離之本土型菌株，貼合在地體質脈絡",
+              "自台灣人腸道黏膜分離之本土型菌株，貼合在地體質脈絡",
               "多為國外菌庫常見商業菌株，未必有本土臨床脈絡",
             ],
             [

@@ -26,7 +26,7 @@ export function HeroBridgeSection() {
     <section className="border-t border-sky-200/40 bg-gradient-to-b from-white/75 to-sky-50/45">
       <div className="mx-auto max-w-6xl px-4 py-8 text-center sm:px-6 sm:py-10 md:px-8">
         <p className="text-base leading-relaxed text-brand-navy/75 sm:text-lg">
-          4°C 活性鎖鮮，讓原生菌在腸道真正覺醒。
+          活性鎖鮮，讓原生菌在腸道真正覺醒。
         </p>
 
         <div className="mt-3 flex items-center justify-center" aria-label="4 度活性鎖鮮">
