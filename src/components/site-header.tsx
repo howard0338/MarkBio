@@ -132,7 +132,7 @@ export function SiteHeader() {
                 alt="Mark Biomedical 原益菌"
                 width={360}
                 height={100}
-                className="h-12 w-auto object-contain object-left mix-blend-multiply sm:h-14 md:h-16"
+                className="h-10 w-auto object-contain object-left mix-blend-multiply sm:h-11 md:h-13"
                 priority
                 unoptimized
               />

@@ -124,6 +124,22 @@ export function HeroSection() {
             由健康成年台灣人腸道黏膜分離出的本土型原生益菌，具備四大優勢：耐酸抗膽鹽、長效吸附、可抑制 14
             種腸道有害菌，並有四大學術機構與百位以上臨床個案支持，為日常健康提供更扎實的防護基礎。
           </motion.p>
+          <motion.p
+            initial="hidden"
+            animate="show"
+            variants={afterTitleStagger(0)}
+            className="mt-3 max-w-2xl text-pretty text-sm leading-relaxed text-brand-navy/65 sm:text-base"
+          >
+            本產品菌株已完成 DNA 基因定序，具備可追溯的菌株身分驗證，補充更安心。
+          </motion.p>
+          <motion.p
+            initial="hidden"
+            animate="show"
+            variants={afterTitleStagger(0)}
+            className="mt-2 max-w-2xl text-pretty text-sm leading-relaxed text-brand-navy/65 sm:text-base"
+          >
+            本產品具衛生福利部核可的「健康食品」標章（衛署健食字第 A00042 號），來源與品質可追溯，讓日常補充更安心。
+          </motion.p>
 
           <motion.div
             initial="hidden"

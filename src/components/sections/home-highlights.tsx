@@ -12,7 +12,7 @@ const coreAdvantages = [
   },
   {
     title: "學術科研護城河",
-    subtitle: "中研院院士推薦",
+    subtitle: "中研院專家推薦",
     description:
       "獲台大、清大等跨學研機構長期實驗與臨床脈絡支持。",
     icon: Award,
@@ -109,7 +109,7 @@ export function HomeHighlightsSection() {
           <div className="flex items-center justify-center p-2 text-center">
             <div>
               <p className="text-6xl font-bold leading-none text-brand-electric">90%</p>
-              <p className="mt-2 text-lg font-semibold text-brand-navy">病誘源自體內發炎</p>
+              <p className="mt-2 text-lg font-semibold text-brand-navy">病因源自體內發炎</p>
             </div>
           </div>
         </section>

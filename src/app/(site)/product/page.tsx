@@ -36,6 +36,12 @@ export default function ProductPage() {
             <p className="mt-4 text-sm leading-relaxed text-brand-navy/70 sm:text-base">
               專為台灣人體質設計的本土型原生益菌，以科學實證為基礎，強調耐酸抗膽鹽、腸道定殖與日常防護，協助維持腸道菌叢平衡與健康狀態。
             </p>
+            <p className="mt-3 text-sm leading-relaxed text-brand-navy/70 sm:text-base">
+              菌株已完成 DNA 基因定序驗證，具備明確且可追溯的身分資訊，來源更透明、補充更有保障。
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-brand-navy/70 sm:text-base">
+              本產品具衛生福利部核可的「健康食品」標章（衛署健食字第 A00042 號），來源與品質可追溯，讓日常補充更安心。
+            </p>
             <div className="mt-6 rounded-xl border border-sky-200/70 bg-sky-50/60 px-4 py-4">
               <p className="text-sm text-brand-navy/60">建議售價</p>
               <p className="mt-1 text-3xl font-bold tracking-tight text-brand-electric">

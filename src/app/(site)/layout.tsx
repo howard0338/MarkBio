@@ -12,7 +12,7 @@ export default function SiteLayout({
       <footer className="mt-12 border-t border-sky-200/50 bg-white/50">
         <div className="mx-auto max-w-6xl px-4 py-6 text-xs leading-relaxed text-brand-navy/70 sm:px-6 sm:text-sm md:px-8">
           <p>2026年 馬克生醫股份有限公司®</p>
-          <p>地址:台北市中山區松江路101號4樓之2</p>
+          <p>地址：台北市中山區松江路101號4樓之2</p>
         </div>
       </footer>
     </div>

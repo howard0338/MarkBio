@@ -60,9 +60,9 @@ export const scienceArticleBodies: Record<string, ScienceArticleBody> = {
         ],
       },
       {
-        title: "益生菌與益菌助生質的搭配",
+        title: "益生菌與益生元的搭配",
         paragraphs: [
-          "益生菌（Probiotics）是能改變腸內微生物平衡的活菌。益菌助生質（Prebiotics，如寡糖、異麥芽寡糖等）則是益菌的「專屬糧食」，能選擇性刺激腸道益菌生長。兩者並用，有助理菌、養菌、延續定殖條件。",
+          "益生菌（Probiotics）是能改變腸內微生物平衡的活菌。益生元（Prebiotics，如寡糖、異麥芽寡糖等）則是益菌的「專屬糧食」，能選擇性刺激腸道益菌生長。兩者並用，有助理菌、養菌、延續定殖條件。",
         ],
       },
       {
@@ -106,7 +106,7 @@ export const scienceArticleBodies: Record<string, ScienceArticleBody> = {
         ],
       },
       {
-        title: "雙效免疫調節",
+        title: "雙向免疫調節",
         paragraphs: [
           "引用食品工業發展研究所等實驗，可探討 TCell-1 與下列方向之關聯敘事：腸道黏膜免疫抗體（IgA、IgM）分泌量、自然殺手細胞（NK 細胞）活性、脾臟細胞激素（如 IL-2）分泌等，從而呈現「腸道—全身」免疫溝通的可能。實務呈現上宜附實驗出處與限縮用語。",
         ],
@@ -155,7 +155,7 @@ export const scienceArticleBodies: Record<string, ScienceArticleBody> = {
             ],
             [
               "益菌定義與實驗體系",
-              "實驗與敘事對應多項世界原生益菌定義要點",
+              "實驗與敘事對應多項國際通用之益生菌定義要點",
               "實驗完整度、公開程度不一，消費者難以比較",
             ],
             [
