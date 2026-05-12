@@ -11,6 +11,7 @@ export type ArticleSection = {
   title: string
   paragraphs: string[]
   listItems?: string[]
+  links?: { label: string; href: string }[]
   table?: ArticleTable
 }
 
@@ -26,7 +27,7 @@ export const scienceArticleBodies: Record<string, ScienceArticleBody> = {
       {
         title: "本土原生菌種的誕生",
         paragraphs: [
-          "TCell-1 是國內第一株以內視鏡深入健康台灣人腸道黏膜組織中，篩選、分離出來的本土型乳酸桿菌。因取自台灣人體內正常棲息生態，在適應上更貼合台灣人體質與飲食生活型態。",
+          "TCELL-1 是國內第一株以內視鏡深入健康台灣人腸道黏膜組織中，篩選、分離出來的本土型乳酸桿菌。因取自台灣人體內正常棲息生態，在適應上更貼合台灣人體質與飲食生活型態。",
         ],
       },
       {
@@ -45,7 +46,7 @@ export const scienceArticleBodies: Record<string, ScienceArticleBody> = {
       {
         title: "超強的生存力",
         paragraphs: [
-          "TCell-1 在實驗條件下能順利通過胃酸（pH 約 2.5）與膽鹽環境的挑戰，抵達腸道發揮作用；並可在人體腸道環境中吸附、存活長達一週以上，為實際補充效益提供基礎。實務呈現上可搭配圖表或示意，強化「能活著到達、能穩定附著」的科學訊息。",
+          "TCELL-1 在實驗條件下能順利通過胃酸（pH 約 2.5）與膽鹽環境的挑戰，抵達腸道發揮作用；並可在人體腸道環境中吸附、存活長達一週以上，為實際補充效益提供基礎。實務呈現上可搭配圖表或示意，強化「能活著到達、能穩定附著」的科學訊息。",
         ],
       },
     ],
@@ -77,21 +78,31 @@ export const scienceArticleBodies: Record<string, ScienceArticleBody> = {
     lead: "",
     sections: [
       {
-        title: "國家級榮譽與健字號",
+        title: "技術說明",
         paragraphs: [
-          "TCell-1 是少數同時具備多項國家級與產業指標的產品，包含：第一屆國際生醫新創獎、2002 國家生技醫療品質入圍獎，以及行政院衛生署健康食品認證（衛署健食字第 A00042 號）。可於此區以獎盃圖、證書縮圖與可點擴大的 PDF／圖片強化可視性。",
+          "TCELL-1 原生益菌（Lactobacillus rhamnosus TCELL-1）是國內第一株由鼎健公司依國際「原生益菌定義」（Lee and Salminen, 1995），以直腸鏡深入國人健康成人腸道黏膜組織中所篩選分離而得，並完成基因序列定序及十國專利申請。",
+          "除由台大醫學院實驗動物中心完成完整動物安全性試驗外，並由台大醫學院實驗動物中心、食品工業發展研究所與國立清華大學共同實驗證明其具備抗胃酸耐膽鹽、抑制 14 種有害菌（in vitro）、增加體內益生菌菌群（乳酸桿菌群、雙叉桿菌群）、調整腸內菌叢生態、增加腸道黏膜免疫抗體 IgA 與 IgM 分泌量、增加自然殺手細胞活性、於自發與 ConA 刺激下增加脾臟淋巴細胞分泌 Th1 細胞激素 IL-2，以及可在腸道吸附長達一週以上等成果。",
+          "在「以 DMH 致癌物及高油脂飼料所誘發之腸腫瘤預防效果預備實驗」中亦顯示，TCELL-1 原生益菌對脾臟及腎臟方面有明顯正面效果。",
+          "鼎健在掌握國內第一株本土型專利原生菌株後，選擇不以重資本方式自建產線，而將產品製造全程交由專業 GMP 廠商生產，以保留企業戰力並聚焦品牌經營，降低人力與產能波動成本，提升整體營運效益。",
+          "在製造端，鼎健選擇與葡萄王企業股份有限公司合作，基於其生物工程中心具備專業乳酸菌生產設備、技術與經驗，以及獨特乳酸菌發酵模式，可提供更佳品質與更高菌數單位產品，形成雙贏合作模式。",
+        ],
+        links: [
+          {
+            label: "國家新創獎報導連結",
+            href: "https://innoaward.taiwan-healthcare.org/photo_detail.php?REFDOCTYPID=0lzdo57o4o3wjhdo&REFDOCID=0lzdp57ding6xecs",
+          },
         ],
       },
       {
-        title: "多國發明專利佈局",
-        paragraphs: [
-          "產品已申請十國專利，並可特別展示已取得的新加坡專利、中國發明專利等證書影本。建議註明申請／核准年份與專利摘要，讓專業與一般消費者皆能對照、查證。",
-        ],
-      },
-      {
-        title: "頂尖學術與實驗單位支持",
-        paragraphs: [
-          "研發與驗證過程中，曾與台大醫學院實驗動物中心、清華大學生命科學系、食品工業發展研究所、中國醫藥大學等單位合作，展開共同研發與實驗證實。可於本節以 logo 牆＋各單位合作敘事加深公信力。",
+        title: "專家評語簡摘",
+        paragraphs: ["與相關乳酸菌產品比較，TCELL-1 原生益菌的產品優勢及利基如下："],
+        listItems: [
+          "本土型：根據陽明大學與清華大學學者觀點，源自國人健康成人腸道黏膜的本土型菌株，在生活環境與飲食型態較相近的前提下，理論上更有機會在國人體內穩定生長。",
+          "優良的抗酸耐鹼能力：多項實驗結果顯示，TCELL-1 原生益菌可通過胃酸與膽鹽考驗，直達腸道發揮作用。",
+          "提升免疫力：相較多數乳酸菌健康食品訴求停留於增加腸內益生菌，TCELL-1 原生益菌在多項實驗中呈現對免疫力提升的正向作用。",
+          "優良的產酸能力：實驗證明其具優良乳酸生成能力，可促進腸胃蠕動並有助排便；於市立醫院人體臨床觀察中，九成以上患者之排便與脹氣狀況獲得改善。",
+          "優良的腸道附著能力：經實驗證實，TCELL-1 原生益菌可吸附在人體腸道長達一週以上，此能力亦與口服應用發展潛力相關。",
+          "適合發展口服疫苗的染色體結構：研究指出 TCELL-1 原生益菌之染色體（chromosome）結構具備口服疫苗開發潛力，對未來新藥研發具趨勢意義。",
         ],
       },
     ],
@@ -102,19 +113,19 @@ export const scienceArticleBodies: Record<string, ScienceArticleBody> = {
       {
         title: "腸胃功能改善",
         paragraphs: [
-          "實驗證實 TCell-1 能產生大量乳酸等有機酸，可刺激腸胃蠕動，並在實驗系統中對赤痢菌、金黃色葡萄球菌等 14 種害菌，呈現可觀的抑制趨勢。對外溝通時之宣稱仍須符合健康食品、廣告等相關法規。",
+          "實驗證實 TCELL-1 能產生大量乳酸等有機酸，可刺激腸胃蠕動，並在實驗系統中對赤痢菌、金黃色葡萄球菌等 14 種害菌，呈現可觀的抑制趨勢。對外溝通時之宣稱仍須符合健康食品、廣告等相關法規。",
         ],
       },
       {
         title: "雙向免疫調節",
         paragraphs: [
-          "引用食品工業發展研究所等實驗，可探討 TCell-1 與下列方向之關聯敘事：腸道黏膜免疫抗體（IgA、IgM）分泌量、自然殺手細胞（NK 細胞）活性、脾臟細胞激素（如 IL-2）分泌等，從而呈現「腸道—全身」免疫溝通的可能。實務呈現上宜附實驗出處與限縮用語。",
+          "引用食品工業發展研究所等實驗，可探討 TCELL-1 與下列方向之關聯敘事：腸道黏膜免疫抗體（IgA、IgM）分泌量、自然殺手細胞（NK 細胞）活性、脾臟細胞激素（如 IL-2）分泌等，從而呈現「腸道—全身」免疫溝通的可能。實務呈現上宜附實驗出處與限縮用語。",
         ],
       },
       {
         title: "腫瘤預防與輔助（基礎研究）",
         paragraphs: [
-          "台大實驗動物中心曾就 TCell-1 對特定腫瘤細胞（如 B16F10 黑色素瘤、A549 肺癌細胞等）的成長與轉移行為提出基礎觀察，相關方向具備作為口服活菌載體或輔助策略的學理討論空間。本段屬實驗室／動物實驗脈絡，不得等同人體療效宣稱。",
+          "台大實驗動物中心曾就 TCELL-1 對特定腫瘤細胞（如 B16F10 黑色素瘤、A549 肺癌細胞等）的成長與轉移行為提出基礎觀察，相關方向具備作為口服活菌載體或輔助策略的學理討論空間。本段屬實驗室／動物實驗脈絡，不得等同人體療效宣稱。",
         ],
       },
     ],
@@ -140,13 +151,13 @@ export const scienceArticleBodies: Record<string, ScienceArticleBody> = {
     lead: "",
     sections: [
       {
-        title: "TCell-1 與一般市售乳酸菌",
+        title: "TCELL-1 與一般市售乳酸菌",
         paragraphs: [
           "下列對照可置於一頁或捲動表格中，用於行銷簡報與網路閱讀。",
         ],
         table: {
-          caption: "市售常見產品與 TCell-1 差異一覽（重點整理）",
-          headers: ["比較面向", "TCell-1 重點", "常見市售產品可能狀況"],
+          caption: "市售常見產品與 TCELL-1 差異一覽（重點整理）",
+          headers: ["比較面向", "TCELL-1 重點", "常見市售產品可能狀況"],
           rows: [
             [
               "菌株來源",
@@ -174,12 +185,12 @@ export const scienceArticleBodies: Record<string, ScienceArticleBody> = {
       {
         title: "與 LGG、LP33 等常見菌株的比較視角",
         paragraphs: [
-          "下表從抑制光譜、臨床資源與智財面向，摘要比較 TCell-1 與市售常見指標菌株的論述重點（實際宣稱須合規、且不同產品配方不可直接等同）。",
-          "與 LGG、LP33 等耳熟能詳的菌株相較，TCell-1 可強調：本土分離脈絡、14 種害菌抑制實驗的系統性整理、國內臨床可稽案例數、以及專利與健字／獎項的疊加。頁面呈現可輔以雷達圖、長條圖或圖示，避免單一數字斷章取義。",
+          "下表從抑制光譜、臨床資源與智財面向，摘要比較 TCELL-1 與市售常見指標菌株的論述重點（實際宣稱須合規、且不同產品配方不可直接等同）。",
+          "與 LGG、LP33 等耳熟能詳的菌株相較，TCELL-1 可強調：本土分離脈絡、14 種害菌抑制實驗的系統性整理、國內臨床可稽案例數、以及專利與健字／獎項的疊加。頁面呈現可輔以雷達圖、長條圖或圖示，避免單一數字斷章取義。",
         ],
         table: {
           caption: "與常見商業菌株之學理／資源對照（範例）",
-          headers: ["面向", "TCell-1", "常見菌株舉例（LGG、LP33 等）"],
+          headers: ["面向", "TCELL-1", "常見菌株舉例（LGG、LP33 等）"],
           rows: [
             [
               "害菌抑制光譜（實驗條件）",
@@ -207,4 +218,26 @@ export function getScienceArticleBody(
   slug: string
 ): ScienceArticleBody | undefined {
   return scienceArticleBodies[slug]
+}
+
+/** 科學實證總覽頁：依序合併六篇專欄，呈現 TCELL-1 成就與科學脈絡 */
+const TCELL_ACHIEVEMENTS_SLUG_ORDER = [
+  "tcell-1",
+  "gut-health",
+  "awards",
+  "research",
+  "clinical",
+  "why",
+] as const
+
+export function getTcellAchievementsOverviewBody(): ScienceArticleBody {
+  const sections = TCELL_ACHIEVEMENTS_SLUG_ORDER.flatMap((slug) => {
+    const body = scienceArticleBodies[slug]
+    return body?.sections ?? []
+  })
+  return {
+    lead:
+      "以下彙整 TCELL-1 自本土菌株身世、腸道保健脈絡、國家肯定與專利、實驗數據、醫院臨床脈絡到市場定位的核心敘事，作為科學實證總覽。",
+    sections,
+  }
 }

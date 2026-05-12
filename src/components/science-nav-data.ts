@@ -3,7 +3,7 @@ export const scienceColumns = [
   {
     id: "col-tcell-intro",
     href: "/science/tcell-1",
-    title: "認識 TCell-1",
+    title: "認識 TCELL-1",
     subtitle: "品牌與產品介紹",
   },
   {
@@ -33,7 +33,7 @@ export const scienceColumns = [
   {
     id: "col-why",
     href: "/science/why",
-    title: "為什麼選擇 TCell-1？",
+    title: "為什麼選擇 TCELL-1？",
     subtitle: "市場優勢比較",
   },
 ] as const

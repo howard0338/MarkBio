@@ -7,7 +7,7 @@ const coreAdvantages = [
     title: "本土原生來源",
     subtitle: "首株本土原生菌",
     description:
-      "TCell-1 來自健康成年台灣人腸道黏膜，完整契合在地體質與飲食環境。",
+      "TCELL-1 來自健康成年台灣人腸道黏膜，完整契合在地體質與飲食環境。",
     icon: Beaker,
   },
   {

@@ -4,7 +4,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "產品 | Mark Biomedical 原益菌",
-  description: "TCell-1 與產品諮詢。",
+  description: "TCELL-1 與產品諮詢。",
 }
 
 export default function ProductPage() {
@@ -19,8 +19,8 @@ export default function ProductPage() {
           <div className="mx-auto w-full max-w-xs overflow-hidden rounded-2xl sm:max-w-sm lg:max-w-[22rem]">
             <div className="relative aspect-[4/5] w-full">
               <Image
-                src="/images/product.png"
-                alt="TCell-1 原益菌產品"
+                src="/images/產品.png"
+                alt="TCELL-1 原益菌產品"
                 fill
                 sizes="(min-width: 1024px) 28rem, 90vw"
                 className="object-contain"
@@ -31,7 +31,7 @@ export default function ProductPage() {
 
           <div>
             <h2 className="text-balance text-2xl font-semibold tracking-[-0.02em] text-brand-navy sm:text-3xl">
-              TCell-1 原益菌
+              TCELL-1 原益菌
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-brand-navy/70 sm:text-base">
               專為台灣人體質設計的本土型原生益菌，以科學實證為基礎，強調耐酸抗膽鹽、腸道定殖與日常防護，協助維持腸道菌叢平衡與健康狀態。
@@ -44,11 +44,16 @@ export default function ProductPage() {
             </p>
             <div className="mt-6 rounded-xl border border-sky-200/70 bg-sky-50/60 px-4 py-4">
               <p className="text-sm text-brand-navy/60">建議售價</p>
-              <p className="mt-1 text-3xl font-bold tracking-tight text-brand-electric">
-                NT$ 2,800
-              </p>
-              <p className="mt-2 text-sm font-semibold text-brand-navy sm:text-base">
-                推廣價 買一送一
+              <div className="mt-1 flex items-end gap-2">
+                <span className="text-sm font-medium text-brand-navy/65">2入組</span>
+                <span className="text-lg text-brand-navy/45 line-through">NT$ 5,600</span>
+                <span className="text-3xl font-bold tracking-tight text-brand-electric">
+                  NT$ 2,800
+                </span>
+              </div>
+              <p className="mt-3 text-sm leading-relaxed text-brand-navy/75 sm:text-base">
+                <span className="font-semibold text-brand-navy">限時活動：</span>
+                一次購買三組免冷鏈運費，及加送一張華爾街馬克講座入場券（由紐約華爾街金融機構前執行長及中研院院士擔任演講佳賓，市售價 3600 元）。
               </p>
             </div>
           </div>

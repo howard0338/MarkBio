@@ -1,5 +1,6 @@
 import type { ScienceArticleBody } from "@/content/science-article-bodies"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 
 type Props = {
   body: ScienceArticleBody
@@ -46,6 +47,22 @@ export function ScienceArticleProse({ body }: Props) {
             <ul className="mt-4 list-disc space-y-2.5 pl-5 text-sm leading-relaxed text-brand-navy/75 marker:text-brand-electric/80 sm:text-base">
               {section.listItems.map((item) => (
                 <li key={item}>{item}</li>
+              ))}
+            </ul>
+          ) : null}
+          {section.links && section.links.length > 0 ? (
+            <ul className="mt-4 space-y-2 text-sm leading-relaxed sm:text-base">
+              {section.links.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand-electric underline-offset-2 transition-colors hover:text-blue-700 hover:underline"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
               ))}
             </ul>
           ) : null}

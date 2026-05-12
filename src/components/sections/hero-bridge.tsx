@@ -36,45 +36,44 @@ export function HeroBridgeSection() {
         </p>
 
         <div
-          className="mt-3 flex items-center justify-center gap-4 sm:gap-6"
-          aria-label="100 億菌、4 度活性鎖鮮、抗 14 種外來菌"
+          className="mt-3 flex items-center justify-center gap-6 sm:gap-10 md:gap-12"
+          aria-label="每公克 CFU 100 億活菌、4 度冷鏈保存、抗 14 種外來菌"
         >
-          <div className="min-w-[5.75rem] text-right sm:min-w-[7rem]">
-            <p className="text-xs text-brand-navy/60 sm:text-sm">活菌含量</p>
+          <div className="flex min-w-[9.5rem] flex-col gap-y-2.5 pr-1 text-right sm:min-w-[12rem] sm:gap-y-3 sm:pr-2">
+            <p className="text-xs text-brand-navy/60 sm:text-sm">每公克 CFU 活菌含量</p>
             <motion.p
               key={`billion-${displayBillion}`}
-              className="text-2xl font-bold tracking-tight text-brand-navy sm:text-3xl"
+              className="text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl"
               initial={{ y: 8, opacity: 0.4 }}
               animate={{ y: 0, opacity: 1, scale: displayBillion === 100 ? [1, 1.06, 1] : 1 }}
               transition={{ duration: 0.2, ease: "easeOut" }}
             >
-              {displayBillion}億菌
+              {displayBillion}億
             </motion.p>
           </div>
 
-          <motion.p
-            key={`temp-${displayTemp}`}
-            className="text-5xl font-bold tracking-tight text-brand-electric sm:text-6xl"
-            initial={{ y: -10, opacity: 0.3 }}
-            animate={{
-              y: 0,
-              opacity: 1,
-              scale: displayTemp === 4 ? [1, 1.08, 1] : 1,
-              textShadow:
-                displayTemp === 4
-                  ? "0 0 22px rgba(37,99,235,0.35)"
-                  : "0 0 0 rgba(37,99,235,0)",
-            }}
-            transition={{ duration: 0.18, ease: "easeOut" }}
-          >
-            {displayTemp}°C
-          </motion.p>
+          <div className="flex min-w-[6rem] flex-col gap-y-2.5 px-1 text-center sm:min-w-[7.5rem] sm:gap-y-3 sm:px-2">
+            <p className="text-xs text-brand-navy/60 sm:text-sm">冷鏈保存</p>
+            <motion.p
+              key={`temp-${displayTemp}`}
+              className="text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl"
+              initial={{ y: -10, opacity: 0.3 }}
+              animate={{
+                y: 0,
+                opacity: 1,
+                scale: displayTemp === 4 ? [1, 1.08, 1] : 1,
+              }}
+              transition={{ duration: 0.18, ease: "easeOut" }}
+            >
+              {displayTemp}°C
+            </motion.p>
+          </div>
 
-          <div className="min-w-[5.75rem] text-left sm:min-w-[7rem]">
+          <div className="flex min-w-[6rem] flex-col gap-y-2.5 pl-1 text-left sm:min-w-[7.5rem] sm:gap-y-3 sm:pl-2">
             <p className="text-xs text-brand-navy/60 sm:text-sm">防護力</p>
             <motion.p
               key={`shield-${displayShield}`}
-              className="text-2xl font-bold tracking-tight text-brand-navy sm:text-3xl"
+              className="text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl"
               initial={{ y: 8, opacity: 0.4 }}
               animate={{ y: 0, opacity: 1, scale: displayShield === 14 ? [1, 1.06, 1] : 1 }}
               transition={{ duration: 0.2, ease: "easeOut" }}
@@ -83,10 +82,6 @@ export function HeroBridgeSection() {
             </motion.p>
           </div>
         </div>
-
-        <p className="mt-3 text-xl font-semibold tracking-[-0.02em] text-brand-navy sm:text-2xl">
-          讓好菌活著見你
-        </p>
       </div>
     </section>
   )

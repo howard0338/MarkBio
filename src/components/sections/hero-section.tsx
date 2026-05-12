@@ -112,7 +112,7 @@ export function HeroSection() {
               專為台灣人體質而生
             </span>
             <br />
-            <span>TCell-1 腸道守護神</span>
+            <span>TCELL-1 腸道守護神</span>
           </motion.h1>
 
           <motion.p
@@ -200,17 +200,14 @@ export function HeroSection() {
           <div className="relative overflow-hidden rounded-[1.35rem]">
             <div className="relative aspect-[4/5] w-full">
               <Image
-                src="/images/product.png"
-                alt="TCell-1 原益菌產品照"
+                src="/images/產品.png"
+                alt="TCELL-1 原益菌產品照"
                 fill
                 sizes="(min-width: 1280px) 26rem, (min-width: 1024px) 24rem, 80vw"
                 className="object-contain"
                 unoptimized
               />
             </div>
-            <p className="px-4 py-3 text-center text-xs leading-relaxed text-brand-navy/60">
-              TCell-1 原益菌產品示意（以實際出貨包裝為準）
-            </p>
           </div>
         </motion.div>
       </div>
