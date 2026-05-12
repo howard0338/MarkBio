@@ -1,4 +1,5 @@
 import {
+  probioticsFrontierIntro,
   probioticsFrontierReferences,
   probioticsFrontierRelatedLinks,
   probioticsFrontierThemes,
@@ -9,6 +10,18 @@ import Link from "next/link"
 export function ProbioticsFrontierArticle() {
   return (
     <div className="mx-auto max-w-3xl">
+      {probioticsFrontierIntro.length > 0 ? (
+        <div className="mb-10 space-y-4 border-b border-sky-200/50 pb-10">
+          {probioticsFrontierIntro.map((p, i) => (
+            <p
+              key={i}
+              className="text-pretty text-sm leading-relaxed text-brand-navy/75 sm:text-base"
+            >
+              {p}
+            </p>
+          ))}
+        </div>
+      ) : null}
       <ol className="space-y-0">
         {probioticsFrontierThemes.map((theme, ti) => (
           <li
@@ -54,6 +67,11 @@ export function ProbioticsFrontierArticle() {
                   </ul>
                 </div>
               ))}
+              {theme.footnote ? (
+                <p className="mt-4 text-pretty text-sm leading-relaxed text-brand-navy/70 sm:text-base">
+                  {theme.footnote}
+                </p>
+              ) : null}
             </section>
           </li>
         ))}

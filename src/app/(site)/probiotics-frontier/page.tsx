@@ -5,7 +5,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "腸道菌醫學 | Mark Biomedical 原益菌",
   description:
-    "腦腸軸與神經退化、腸道發炎、代謝與慢性病、益生菌照顧方式等腸道菌醫學主題。",
+    "腦腸軸與神經退化、腸道發炎、腸道菌與癌症、代謝與慢性病、益生菌照顧方式與腸道健康警示等腸道菌醫學主題。",
 }
 
 export default function ProbioticsFrontierPage() {
