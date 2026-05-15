@@ -58,9 +58,10 @@ export default function ProductPage() {
               本產品具衛生福利部核可的「健康食品」標章（衛署健食字第 A00042 號），來源與品質可追溯，讓日常補充更安心。
             </p>
             <div className={cn(sitePanelInset, "mt-6")}>
-              <p className="text-sm text-brand-navy/60">建議售價</p>
+              <p className="text-sm font-medium text-brand-navy/75">
+                限時特惠售價（買一瓶送一瓶）
+              </p>
               <div className="mt-1 flex items-end gap-2">
-                <span className="text-sm font-medium text-brand-navy/65">2入組</span>
                 <span className="text-lg text-brand-navy/45 line-through">NT$ 5,600</span>
                 <span className="text-3xl font-bold tracking-tight text-brand-electric">
                   NT$ 2,800
