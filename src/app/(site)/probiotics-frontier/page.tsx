@@ -1,5 +1,6 @@
 import { PageHeading } from "@/components/sections/page-heading"
 import { ProbioticsFrontierArticle } from "@/components/sections/probiotics-frontier-article"
+import { siteContainer, siteSection } from "@/lib/site-layout"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -15,8 +16,10 @@ export default function ProbioticsFrontierPage() {
         title="腸道菌醫學"
         description="從腦腸軸、免疫與代謝到日常照護。"
       />
-      <section className="border-t border-sky-200/30 bg-sky-50/20 px-4 py-10 sm:px-6 sm:py-12 md:px-8">
-        <ProbioticsFrontierArticle />
+      <section className={siteSection}>
+        <div className={`${siteContainer} py-10 sm:py-12`}>
+          <ProbioticsFrontierArticle />
+        </div>
       </section>
     </>
   )

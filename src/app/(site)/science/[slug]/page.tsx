@@ -43,9 +43,7 @@ export default function ScienceArticlePage({ params }: Props) {
       {body ? (
         <ScienceArticleProse body={body} />
       ) : (
-        <p className="text-sm leading-relaxed text-brand-navy/60 sm:text-base">
-          內容建置中，敬請期待。
-        </p>
+        <p className="text-brand-navy/60">內容建置中，敬請期待。</p>
       )}
     </ScienceArticleTemplate>
   )

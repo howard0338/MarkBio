@@ -2,6 +2,9 @@
 
 import { Award, Beaker, ShieldCheck, Snowflake } from "lucide-react"
 
+import { siteContainer, siteCopy } from "@/lib/site-layout"
+import { cn } from "@/lib/utils"
+
 const coreAdvantages = [
   {
     title: "本土原生來源",
@@ -41,8 +44,8 @@ const qualityPoints = [
 export function HomeHighlightsSection() {
   return (
     <section className="border-t border-sky-200/40 bg-white/60">
-      <div className="mx-auto max-w-6xl space-y-12 px-4 py-8 sm:px-6 sm:py-12 md:px-8">
-        <section className="space-y-6">
+      <div className={cn(siteContainer, "space-y-12 py-8 sm:py-12")}>
+        <section className={cn(siteCopy, "space-y-6")}>
           <h2 className="text-balance text-2xl font-semibold tracking-[-0.02em] text-brand-navy sm:text-3xl">
             核心優勢：台灣人專屬的原生防護
           </h2>
@@ -61,7 +64,7 @@ export function HomeHighlightsSection() {
                   <p className="mt-1 text-sm font-medium text-brand-electric/90">
                     {item.subtitle}
                   </p>
-                  <p className="mt-2 text-sm leading-relaxed text-brand-navy/70">
+                  <p className="mt-2 text-brand-navy/70">
                     {item.description}
                   </p>
                 </article>
@@ -70,12 +73,12 @@ export function HomeHighlightsSection() {
           </div>
         </section>
 
-        <section className="grid gap-6 p-2 md:grid-cols-[1.25fr_0.9fr]">
+        <section className={cn(siteCopy, "grid gap-6 md:grid-cols-[1.25fr_0.9fr]")}>
           <div>
             <h3 className="text-balance text-2xl font-semibold tracking-[-0.02em] text-brand-navy">
               堅持冷鏈：守護百億活菌活性
             </h3>
-            <ul className="mt-4 space-y-2.5 text-sm leading-relaxed text-brand-navy/75 sm:text-base">
+            <ul className="mt-4 space-y-2.5">
               {coldChainPoints.map((point) => (
                 <li key={point} className="flex gap-2">
                   <Snowflake className="mt-0.5 size-4 shrink-0 text-brand-electric" />
@@ -92,12 +95,12 @@ export function HomeHighlightsSection() {
           </div>
         </section>
 
-        <section className="grid gap-6 p-2 md:grid-cols-[1.25fr_0.9fr]">
+        <section className={cn(siteCopy, "grid gap-6 md:grid-cols-[1.25fr_0.9fr]")}>
           <div>
             <h3 className="text-balance text-2xl font-semibold tracking-[-0.02em] text-brand-navy">
               極致純淨：醫學等級的品質承諾
             </h3>
-            <ul className="mt-4 space-y-2.5 text-sm leading-relaxed text-brand-navy/75 sm:text-base">
+            <ul className="mt-4 space-y-2.5">
               {qualityPoints.map((point) => (
                 <li key={point} className="flex gap-2">
                   <ShieldCheck className="mt-0.5 size-4 shrink-0 text-brand-electric" />

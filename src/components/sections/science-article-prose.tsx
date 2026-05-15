@@ -1,4 +1,5 @@
 import type { ScienceArticleBody } from "@/content/science-article-bodies"
+import { siteCopy } from "@/lib/site-layout"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 
@@ -10,11 +11,9 @@ export function ScienceArticleProse({ body }: Props) {
   const hasLead = body.lead.trim().length > 0
 
   return (
-    <div className="mx-auto max-w-3xl">
+    <div className={cn(siteCopy, "w-full")}>
       {hasLead ? (
-        <p className="text-pretty text-sm leading-relaxed text-brand-navy/80 sm:text-base">
-          {body.lead}
-        </p>
+        <p className="text-brand-navy/80">{body.lead}</p>
       ) : null}
 
       {body.sections.map((section, index) => (
@@ -36,22 +35,19 @@ export function ScienceArticleProse({ body }: Props) {
             {section.title}
           </h2>
           {section.paragraphs.map((p, pi) => (
-            <p
-              key={pi}
-              className="mt-4 text-pretty text-sm leading-relaxed text-brand-navy/75 sm:text-base"
-            >
+            <p key={pi} className="mt-4 text-brand-navy/75">
               {p}
             </p>
           ))}
           {section.listItems && section.listItems.length > 0 ? (
-            <ul className="mt-4 list-disc space-y-2.5 pl-5 text-sm leading-relaxed text-brand-navy/75 marker:text-brand-electric/80 sm:text-base">
+            <ul className="mt-4 list-disc space-y-2.5 pl-5 text-brand-navy/75 marker:text-brand-electric/80">
               {section.listItems.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
           ) : null}
           {section.links && section.links.length > 0 ? (
-            <ul className="mt-4 space-y-2 text-sm leading-relaxed sm:text-base">
+            <ul className="mt-4 space-y-2">
               {section.links.map((link) => (
                 <li key={link.href}>
                   <Link

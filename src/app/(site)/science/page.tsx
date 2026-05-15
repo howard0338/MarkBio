@@ -1,6 +1,7 @@
 import { PageHeading } from "@/components/sections/page-heading"
 import { ScienceArticleProse } from "@/components/sections/science-article-prose"
 import { getTcellAchievementsOverviewBody } from "@/content/science-article-bodies"
+import { siteContainer, siteSection } from "@/lib/site-layout"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -18,8 +19,10 @@ export default function ScienceIndexPage() {
         title="科學實證"
         description="TCELL-1 成就與科學脈絡總覽。"
       />
-      <section className="border-t border-sky-200/30 bg-sky-50/20 px-4 py-10 sm:px-6 sm:py-12 md:px-8">
-        <ScienceArticleProse body={body} />
+      <section className={siteSection}>
+        <div className={`${siteContainer} py-10 sm:py-12`}>
+          <ScienceArticleProse body={body} />
+        </div>
       </section>
     </>
   )

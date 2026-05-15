@@ -1,3 +1,4 @@
+import { siteContainer, siteCopy } from "@/lib/site-layout"
 import { cn } from "@/lib/utils"
 
 type Props = {
@@ -9,16 +10,14 @@ type Props = {
 export function PageHeading({ title, description, className }: Props) {
   return (
     <header
-      className={cn("border-b border-sky-200/40 bg-sky-50/30 px-4 py-10 sm:px-6 sm:py-12 md:px-8", className)}
+      className={cn("border-b border-sky-200/40 bg-sky-50/30", className)}
     >
-      <div className="mx-auto max-w-6xl">
+      <div className={cn(siteContainer, "py-10 sm:py-12")}>
         <h1 className="text-balance text-2xl font-semibold tracking-[-0.02em] text-brand-navy sm:text-3xl">
           {title}
         </h1>
         {description ? (
-          <p className="mt-2 max-w-2xl text-sm text-brand-navy/60 sm:text-base">
-            {description}
-          </p>
+          <p className={cn(siteCopy, "mt-2 text-brand-navy/60")}>{description}</p>
         ) : null}
       </div>
     </header>

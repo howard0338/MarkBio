@@ -3,6 +3,9 @@
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 
+import { siteContainer, siteCopy } from "@/lib/site-layout"
+import { cn } from "@/lib/utils"
+
 export function HeroBridgeSection() {
   const [displayTemp, setDisplayTemp] = useState(18)
   const [displayBillion, setDisplayBillion] = useState(20)
@@ -30,8 +33,8 @@ export function HeroBridgeSection() {
 
   return (
     <section className="border-t border-sky-200/40 bg-gradient-to-b from-white/75 to-sky-50/45">
-      <div className="mx-auto max-w-6xl px-4 py-8 text-center sm:px-6 sm:py-10 md:px-8">
-        <p className="text-base leading-relaxed text-brand-navy/75 sm:text-lg">
+      <div className={cn(siteContainer, siteCopy, "py-8 text-center sm:py-10")}>
+        <p className="text-base text-brand-navy/75 sm:text-lg">
           活性鎖鮮，讓原生菌在腸道真正覺醒。
         </p>
 

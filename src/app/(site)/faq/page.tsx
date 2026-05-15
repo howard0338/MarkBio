@@ -1,5 +1,6 @@
 import { FaqList } from "@/components/sections/faq-list"
 import { PageHeading } from "@/components/sections/page-heading"
+import { siteContainer } from "@/lib/site-layout"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -14,9 +15,8 @@ export default function FaqPage() {
       <PageHeading
         title="常見問題"
         description="TCELL-1 官方網站常見疑問整理；點擊項目即可展開說明。"
-        className="lg:pl-10"
       />
-      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10 md:px-8 lg:pl-10">
+      <div className={`${siteContainer} py-8 sm:py-10`}>
         <FaqList />
       </div>
     </article>

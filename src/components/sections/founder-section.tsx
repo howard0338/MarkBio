@@ -3,6 +3,8 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 
+import { siteContainer, siteCopy } from "@/lib/site-layout"
+
 export function FounderSection() {
   return (
     <section
@@ -10,7 +12,7 @@ export function FounderSection() {
       className="scroll-mt-24 border-t border-sky-200/30 bg-sky-50/25"
       aria-labelledby="founder-heading"
     >
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 md:px-8">
+      <div className={`${siteContainer} py-12 sm:py-16`}>
         <motion.h2
           id="founder-heading"
           initial={{ opacity: 0, y: 16 }}
@@ -52,7 +54,7 @@ export function FounderSection() {
             <h3 className="text-sm font-semibold text-brand-navy sm:text-base">
               品牌理念
             </h3>
-            <div className="mt-3 space-y-4 text-sm leading-relaxed text-brand-navy/75 sm:text-base">
+            <div className={`${siteCopy} mt-3 space-y-4`}>
               <p>
                 我是林豐盛（Mark Lin），過去在紐約華爾街金融機構擔任執行長的經歷，讓我習慣以嚴謹邏輯與精準數據看待每一件事。見證無數科技與產業革新的同時，我也深刻感受到：人們對根本健康的渴望，始終不曾改變。
               </p>

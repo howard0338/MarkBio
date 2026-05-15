@@ -90,7 +90,7 @@ export function HeroSection() {
       <div
         className="relative z-10 mx-auto flex min-h-[min(84dvh,50rem)] max-w-6xl flex-col justify-center gap-10 px-5 pb-14 pt-4 sm:px-8 sm:pt-6 md:px-10 lg:grid lg:min-h-0 lg:grid-cols-[minmax(0,1.12fr)_minmax(0,0.88fr)] lg:items-center lg:gap-x-6 lg:gap-y-0 lg:px-10 lg:pb-16 lg:pt-6 xl:px-12"
       >
-        <div className="flex max-w-xl flex-col tracking-[-0.02em] md:max-w-2xl lg:max-w-none lg:pr-4">
+        <div className={cn("site-copy flex w-full flex-col tracking-[-0.02em] lg:pr-4")}>
           <motion.p
             initial="hidden"
             animate="show"
@@ -119,7 +119,7 @@ export function HeroSection() {
             initial="hidden"
             animate="show"
             variants={afterTitleStagger(0)}
-            className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-brand-navy/70 sm:text-lg"
+            className="mt-6 text-base text-brand-navy/70 sm:text-lg"
           >
             由健康成年台灣人腸道黏膜分離出的本土型原生益菌，具備四大優勢：耐酸抗膽鹽、長效吸附、可抑制 14
             種腸道有害菌，並有四大學術機構與百位以上臨床個案支持，為日常健康提供更扎實的防護基礎。
@@ -128,7 +128,7 @@ export function HeroSection() {
             initial="hidden"
             animate="show"
             variants={afterTitleStagger(0)}
-            className="mt-3 max-w-2xl text-pretty text-sm leading-relaxed text-brand-navy/65 sm:text-base"
+            className="mt-3 text-sm text-brand-navy/65 sm:text-base"
           >
             本產品菌株已完成 DNA 基因定序，具備可追溯的菌株身分驗證，補充更安心。
           </motion.p>
@@ -136,7 +136,7 @@ export function HeroSection() {
             initial="hidden"
             animate="show"
             variants={afterTitleStagger(0)}
-            className="mt-2 max-w-2xl text-pretty text-sm leading-relaxed text-brand-navy/65 sm:text-base"
+            className="mt-2 text-sm text-brand-navy/65 sm:text-base"
           >
             本產品具衛生福利部核可的「健康食品」標章（衛署健食字第 A00042 號），來源與品質可追溯，讓日常補充更安心。
           </motion.p>
